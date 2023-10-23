@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" afterDir="false" />
+    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="创建Java游戏项目，并提交至GitHub">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/gold0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/gold1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/gold2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/hook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/peo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/rock1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/water.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +38,41 @@
   <component name="ProjectId" id="2XALyB0jN9NfSzYnbaxvOhnqcMN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/JavaGames/src/main/resources/imgs/TheGoldMiner"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaGames\src\main\resources\imgs\TheGoldMiner" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TheGoldMiner.GameWin" />
+      <module name="JavaGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TheGoldMiner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameWin" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,8 +81,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698067191094</updated>
-      <workItem from="1698067192564" duration="1230000" />
+      <workItem from="1698067192564" duration="7392000" />
     </task>
+    <task id="LOCAL-00001" summary="创建Java游戏项目，并提交至GitHub">
+      <created>1698068659604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698068659604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="创建Java游戏项目，并提交至GitHub" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建Java游戏项目，并提交至GitHub" />
   </component>
 </project>
