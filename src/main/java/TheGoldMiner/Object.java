@@ -20,9 +20,19 @@ public class Object {
     //图片
     Image img;
 
+    //质量
+    int m;
+    int count;
+
     void paintSelf(Graphics g){
         g.drawImage(img,x,y,null);
     }
 
+    public int getWidth() {
+        return width;
+    }
 
+    public Rectangle getRec(){
+        return new Rectangle(x,y,width,height);
+    }
 }

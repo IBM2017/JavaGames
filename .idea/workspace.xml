@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="创建Java游戏项目，并提交至GitHub">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/bg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/gold0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/gold1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/gold2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/hook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/peo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/rock1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheGoldMiner/water.png" afterDir="false" />
+    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Bg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Bg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Object.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +34,14 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/JavaGames/src/main/resources/imgs/TheGoldMiner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/JavaGames/src/main/resources/imgs/TheGoldMiner&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\JavaGames\src\main\resources\imgs\TheGoldMiner" />
@@ -81,7 +75,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698067191094</updated>
-      <workItem from="1698067192564" duration="7392000" />
+      <workItem from="1698067192564" duration="7833000" />
+      <workItem from="1698156943266" duration="6399000" />
+      <workItem from="1704197677815" duration="10664000" />
     </task>
     <task id="LOCAL-00001" summary="创建Java游戏项目，并提交至GitHub">
       <created>1698068659604</created>
@@ -90,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698068659604</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线">
+      <created>1698075181245</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698075181245</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +112,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建Java游戏项目，并提交至GitHub" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建Java游戏项目，并提交至GitHub" />
+    <MESSAGE value="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TheGoldMiner/Line.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
