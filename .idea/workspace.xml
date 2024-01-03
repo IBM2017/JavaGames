@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线">
+    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Bg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Bg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Object.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/JavaGames/src/main/resources/imgs/TheGoldMiner&quot;
+    &quot;last_opened_file_path&quot;: &quot;E:/JavaGames/src/main/resources/imgs/TheGoldMiner&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,7 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GameWin" />
+        <item itemvalue="应用程序.GameWin" />
       </list>
     </recent_temporary>
   </component>
@@ -77,7 +77,10 @@
       <updated>1698067191094</updated>
       <workItem from="1698067192564" duration="7833000" />
       <workItem from="1698156943266" duration="6399000" />
-      <workItem from="1704197677815" duration="10664000" />
+      <workItem from="1704197677815" duration="11406000" />
+      <workItem from="1704282796379" duration="55000" />
+      <workItem from="1704282868272" duration="18000" />
+      <workItem from="1704282897345" duration="10917000" />
     </task>
     <task id="LOCAL-00001" summary="创建Java游戏项目，并提交至GitHub">
       <created>1698068659604</created>
@@ -93,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698075181245</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破">
+      <created>1704210205801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704210205801</updated>
+    </task>
+    <task id="LOCAL-00004" summary="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破">
+      <created>1704210246606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704210246606</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +130,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建Java游戏项目，并提交至GitHub" />
     <MESSAGE value="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线" />
+    <MESSAGE value="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -114,5 +114,11 @@ public class Line {
         g.drawImage(hook,endx-36,endy-2,null);
     }
 
+//    重置画线
+    void reGame(){
+        n=0;
+        length=100;
+    }
+
 
 }
