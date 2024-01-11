@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破">
+    <list default="true" id="b3b2bd4b-f65b-4c83-97fb-3853b53588fc" name="Changes" comment="创建黄金矿工子项目，完成功能如下：&#10;1、关卡设置&#10;2、游戏状态&#10;3、计时效果&#10;4、失败状态&#10;5、成功状态&#10;6、游戏重置&#10;7、商店购物">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheSnake/body.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheSnake/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheSnake/food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheSnake/left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheSnake/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imgs/TheSnake/up.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Bg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Bg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheGoldMiner/Line.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +36,22 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/JavaGames/src/main/resources/imgs/TheGoldMiner&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/JavaGames/src/main/resources/imgs/TheSnake",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaGames\src\main\resources\imgs\TheSnake" />
       <recent name="E:\JavaGames\src\main\resources\imgs\TheGoldMiner" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.snake.GameWin">
     <configuration name="GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TheGoldMiner.GameWin" />
       <module name="JavaGames" />
@@ -61,8 +65,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="snake.GameWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="snake.GameWin" />
+      <module name="JavaGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="snake.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.snake.GameWin" />
         <item itemvalue="应用程序.GameWin" />
       </list>
     </recent_temporary>
@@ -80,7 +98,9 @@
       <workItem from="1704197677815" duration="11406000" />
       <workItem from="1704282796379" duration="55000" />
       <workItem from="1704282868272" duration="18000" />
-      <workItem from="1704282897345" duration="10917000" />
+      <workItem from="1704282897345" duration="11219000" />
+      <workItem from="1704724001770" duration="3026000" />
+      <workItem from="1704975821301" duration="8200000" />
     </task>
     <task id="LOCAL-00001" summary="创建Java游戏项目，并提交至GitHub">
       <created>1698068659604</created>
@@ -110,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704210246606</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="创建黄金矿工子项目，完成功能如下：&#10;1、关卡设置&#10;2、游戏状态&#10;3、计时效果&#10;4、失败状态&#10;5、成功状态&#10;6、游戏重置&#10;7、商店购物">
+      <created>1704298671670</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704298671670</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +158,8 @@
     <MESSAGE value="创建Java游戏项目，并提交至GitHub" />
     <MESSAGE value="创建黄金矿工子项目，完成功能如下：&#10;1、绘制背景&#10;2、绘制左右摇摆、伸长、收缩曲线" />
     <MESSAGE value="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建黄金矿工子项目，完成功能如下：&#10;1、创建金块、双缓存技术；&#10;2、抓取判定、抓取返回&#10;3、多个金块、Bug金块消失、石块创建&#10;4、拉取速度、多种金块、物体堆叠&#10;5、红线完善、积分设置、力量与爆破" />
+    <MESSAGE value="创建黄金矿工子项目，完成功能如下：&#10;1、关卡设置&#10;2、游戏状态&#10;3、计时效果&#10;4、失败状态&#10;5、成功状态&#10;6、游戏重置&#10;7、商店购物" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建黄金矿工子项目，完成功能如下：&#10;1、关卡设置&#10;2、游戏状态&#10;3、计时效果&#10;4、失败状态&#10;5、成功状态&#10;6、游戏重置&#10;7、商店购物" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
