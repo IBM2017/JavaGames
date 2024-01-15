@@ -23,14 +23,29 @@ public class EnemyObj extends GameObj{
     public void paintSelf(Graphics g) {
         super.paintSelf(g);
         y+=speed;
+//        敌我飞机碰撞检测
+        if (this.getRec().intersects(this.frame.planeObj.getRec())){
+            GameWin.state=3;
+        }
+//        敌机越界消失 判断条件y>600 改变后的坐标(-200,-200)
+        if (this.y>600){
+            this.x = -200;
+            this.y = 200;
+            GameUtils.removeList.add(this);
+        }
+//        敌机消失前移动至（-200，-200） 我方子弹(-100,100)
         for (ShellObj shellObj:GameUtils.shellObjList) {
             if (this.getRec().intersects(shellObj.getRec())){
+                ExplodeObj explodeObj = new ExplodeObj(x,y);
+                GameUtils.explodeObjList.add(explodeObj);
+                GameUtils.removeList.add(explodeObj);
                 shellObj.setX(-100);
                 shellObj.setY(100);
                 this.x = -200;
                 this.y = 200;
                 GameUtils.removeList.add(shellObj);
                 GameUtils.removeList.add(this);
+                GameWin.score++;
             }
         }
     }

@@ -27,14 +27,21 @@ public class GameUtils {
     //    敌机图片
     public static Image enemyImg = Toolkit.getDefaultToolkit().getImage("src/main/resources/imgs/PlaneWar/enemy.png");
 
+    //    敌机子弹图片
+    public static Image bulletImg = Toolkit.getDefaultToolkit().getImage("src/main/resources/imgs/PlaneWar/bullet.png");
+
     //    所有游戏物体的集合
     public static List<GameObj> gameObjList = new ArrayList<>();
 
 //    我方子弹的集合
     public static List<ShellObj> shellObjList = new ArrayList<>();
+    //    敌方子弹的集合
+    public static List<BulletObj> bullletObjList = new ArrayList<>();
 
     //    敌机的集合
     public static List<EnemyObj> enemyObjList = new ArrayList<>();
+    //    爆炸类的集合
+    public static List<ExplodeObj> explodeObjList = new ArrayList<>();
 
     //    删除元素集合
     public static List<GameObj> removeList = new ArrayList<>();

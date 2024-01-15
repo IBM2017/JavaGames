@@ -27,8 +27,10 @@ public class PlaneObj extends GameObj{
         this.frame.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) {
-                PlaneObj.super.x=e.getX()-11;
-                PlaneObj.super.y=e.getY()-16;
+//                if (GameWin.state==1){
+                    PlaneObj.super.x=e.getX()-11;
+                    PlaneObj.super.y=e.getY()-16;
+//                }
             }
         });
     }
@@ -36,6 +38,10 @@ public class PlaneObj extends GameObj{
     @Override
     public void paintSelf(Graphics g) {
         super.paintSelf(g);
+//        我方飞机与敌方boss的碰撞检测
+        if (this.frame.bossObj!=null&&this.getRec().intersects(this.frame.bossObj.getRec())){
+            GameWin.state=3;
+        }
     }
 
     @Override

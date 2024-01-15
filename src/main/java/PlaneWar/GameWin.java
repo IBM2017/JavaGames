@@ -2,6 +2,8 @@ package PlaneWar;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -22,6 +24,10 @@ public class GameWin extends JFrame {
 
 //    重绘次数
     int count=1;
+//    敌机数量
+    int enemyCount = 0;
+//    游戏得分
+    static int score =0;
 
 //    背景图对象
     BgObj bgObj = new BgObj(GameUtils.bgImg,0,-2000,2);
@@ -29,7 +35,8 @@ public class GameWin extends JFrame {
 //    我方飞机对象
     PlaneObj planeObj = new PlaneObj(GameUtils.planeImg,290,550,20,30,0,this);
 
-
+//    敌方BOSS对象
+    BossObj bossObj = null;
 //    游戏窗口宽度
     private static int GameWidth=600;
 //    游戏窗口高度
@@ -50,6 +57,25 @@ public class GameWin extends JFrame {
 
 //        鼠标点击事件
         this.addMouseListener(this.mouseAdapter());
+//        空格键暂停功能
+        this.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode()==32){
+                    switch (state){
+                        case 1:
+                            state=2;
+                            break;
+                        case 2:
+                            state=1;
+                            break;
+                        default:
+                            state=1;
+                            break;
+                    }
+                }
+            }
+        });
 //        重复绘制
         while (true){
 //            System.out.println(2);
@@ -57,8 +83,6 @@ public class GameWin extends JFrame {
                 createObj();
                 repaint();
             }
-
-            repaint();
             try {
                 Thread.sleep(25);
             } catch (InterruptedException e) {
@@ -74,9 +98,7 @@ public class GameWin extends JFrame {
             public void mouseClicked(MouseEvent e) {
 //                游戏未开始时，点击鼠标左键启动游戏
                 if (e.getButton()==1 && state==0){
-//                    System.out.println(1);
                     state=1;
-                    repaint();
                 }
             }
         };
@@ -86,6 +108,7 @@ public class GameWin extends JFrame {
     public void paint(Graphics g) {
         if (offScreenImg==null){
             offScreenImg = createImage(GameWidth,Gameeheight);
+
         }
         Graphics gImage = offScreenImg.getGraphics();
         gImage.fillRect(0,0,GameWidth,Gameeheight);
@@ -94,12 +117,26 @@ public class GameWin extends JFrame {
             gImage.drawImage(GameUtils.bossImg,220,120,null);
             gImage.drawImage(GameUtils.explodeImg,270,350,null);
             GameUtils.printStr(gImage,Color.YELLOW,"点击开始游戏",40,180,300);
-        } else if (state==1) {
+        }
+        if (state==1) {
+            GameUtils.gameObjList.addAll(GameUtils.explodeObjList);
+//            运行中
             for (int i = 0; i < GameUtils.gameObjList.size(); i++) {
                 GameUtils.gameObjList.get(i).paintSelf(gImage);
             }
             GameUtils.gameObjList.removeAll(GameUtils.removeList);
         }
+        if (state==3){
+//            失败
+            gImage.drawImage(GameUtils.explodeImg,planeObj.getX()-35,planeObj.getY()-50,null);
+            GameUtils.printStr(gImage,Color.RED,"GAME OVER",50,180,300);
+        }
+        if (state==4){
+//            通关
+            gImage.drawImage(GameUtils.explodeImg,bossObj.getX()+30,bossObj.getY(),null);
+            GameUtils.printStr(gImage,Color.green,"游戏通关",50,190,300);
+        }
+        GameUtils.printStr(gImage,Color.green,score+" 分",40,30,100);
         g.drawImage(offScreenImg,0,0,null);
         count++;
 
@@ -115,7 +152,19 @@ public class GameWin extends JFrame {
         if (count%15==0){
             GameUtils.enemyObjList.add(new EnemyObj(GameUtils.enemyImg,(int)(Math.random()*12)*50,0,49,36,5,this));
             GameUtils.gameObjList.add(GameUtils.enemyObjList.get(GameUtils.enemyObjList.size()-1));
+            this.enemyCount++;
         }
+        //        创建敌方boss子弹
+        if (count%15==0&&bossObj!=null){
+            GameUtils.bullletObjList.add(new BulletObj(GameUtils.bulletImg,bossObj.x+76,bossObj.y+85,15,25,5,this));
+            GameUtils.gameObjList.add(GameUtils.bullletObjList.get(GameUtils.bullletObjList.size()-1));
+        }
+
+        if (this.enemyCount>1&&bossObj==null){
+            bossObj = new BossObj(GameUtils.bossImg,250,35,155,100,5,this);
+            GameUtils.gameObjList.add(bossObj);
+        }
+//        System.out.println(GameUtils.gameObjList.size());
     }
 
     public static void main(String[] args) {
